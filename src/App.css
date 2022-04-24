@@ -1,0 +1,273 @@
+:root {
+  --grass-green: #01b169;
+  --dark-gray: #464646;
+  --persian-red: #eb5e51 !important;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  height: 100%;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.hexagon-icon {
+  text-align: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  padding: calc((100% - 34.5px)/2);
+  background-color: #2e2e2e;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  color: #444444;
+  margin: 0 2px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-navbar {
+  background-color: rgb(66 66 66, 1) !important;
+  height: 6rem;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav-brand {
+  z-index: 5;
+  left: calc(50% - 55px);
+  top: 3%;
+  position: absolute;
+}
+
+.brand-logo {
+  width: 110px;
+}
+
+#bundles {
+  height: min-content;
+  background-color: #ebebeb;
+}
+
+.bundles {
+  margin: 0 2rem;
+}
+
+/* Description */
+.description {
+  background-image: url('./assets/description-bg.jpg');
+  min-height: 35rem;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 53% 95%, 50% 100%, 47% 95%, 0 95%);
+  padding: 70px 25px;
+  max-width: 100%;
+}
+
+
+.description-main {
+  margin-top: 3rem;
+  text-shadow: -1px 3px 4px rgb(0, 0, 0, 0.78);
+  font-family: 'Bebas Neue', cursive;
+  color: #dcdcdc;
+  font-size: 70px;
+  line-height: 65px;
+}
+
+.description-par {
+  text-align: left;
+  color: #d8d8d8;
+}
+
+.description button {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.75) !important;
+  border-radius: 3px !important;
+
+}
+
+/* SEGMENT */
+
+#segment {
+  padding: 0 0 70px 0;
+}
+
+.segment-row {
+  margin-top: -60px;
+}
+
+.section-title {
+  margin-top: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #e3e3e3;
+  letter-spacing: 5px;
+}
+
+/* Hexagon */
+
+.marketing-slot {
+  margin: 0 !important;
+  padding: 27%;
+}
+
+.hexagon {
+  text-align: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  padding: calc((100% - 64px)/2);
+}
+
+
+#hexagon-green {
+  background-color: var(--grass-green);
+}
+
+#hexagon-gray {
+  text-align: center;
+  background-color: var(--dark-gray);
+}
+
+
+#hexagon-red {
+  text-align: center;
+  background-color: var(--persian-red);
+}
+
+
+.bundle-info {
+  margin-top: -84px;
+}
+
+/* GuestBook */
+#guestbook {
+  height: min-content;
+  background-color: #2f2f2f;
+}
+
+.card-list {
+  overflow-y: scroll;
+  height: 280px;
+}
+
+.card-date {
+  right: 2rem;
+  top: 2rem;
+  position: absolute;
+}
+
+#bundle-list-1 {
+  border-top: 5px solid #01b169;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5 !important;
+}
+
+#bundle-list-2 {
+  border-top: 5px solid #464646;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5 !important;
+}
+
+#bundle-list-3 {
+  border-top: 5px solid #eb5e51;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5 !important;
+}
+
+.bundle-button {
+  position: absolute !important;
+  width: calc(100% - 30px);
+  bottom: 0;
+  border: none !important;
+}
+
+.list-group-item {
+  background-color: #e5e5e5 !important;
+  padding: 0.45rem 1.25rem !important;
+}
+
+.list-group {
+
+  padding-bottom: 80px !important;
+}
+
+.form-control {
+  height: 2rem !important;
+}
+
+.form-control[name="message"] {
+  height: 8rem !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .marketing-slot {
+    margin: 15rem 12rem 5rem 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar-collapse {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    min-height: 50rem;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 58% 95%, 50% 100%, 42% 95%, 0 95%);
+  }
+
+  .description-main {
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  .marketing-slot {
+    margin: 5rem 12rem 3rem 12rem;
+  }
+}
+
+.computer-icon {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 18px;
+  margin-left: -3px;
+  pointer-events: none;
+}
+
+.navbar-collapse {
+  background: #343a40;
+  padding: 0 25px 20px;
+}
+
+.disabled {
+  opacity: 0.5;
+}
